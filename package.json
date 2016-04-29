@@ -19,8 +19,8 @@
     "postinstall" : "bower install"
   },
   "dependencies": {
-    "meanio-users": "0.1.x",
-    "meanio-circles": "0.1.x",
+    "meanio-users": "git://github.com/linnovate/meanio-users.git",
+    "meanio-circles": "git://github.com/linnovate/meanio-circles.git",
     "request": "^2.36.0",
     "gridfs-stream": "latest",
     "ng-clip": "latest",
