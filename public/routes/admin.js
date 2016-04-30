@@ -34,8 +34,8 @@ angular.module('mean.admin').config(['$stateProvider', '$urlRouterProvider',
         }
       });
   }
-  ]).config(['ngClipProvider',
-      function(ngClipProvider) {
-          ngClipProvider.setPath('../admin/assets/lib/zeroclipboard/dist/ZeroClipboard.swf');
-      }
-  ]);
+]).config(['ngClipProvider',
+  function(ngClipProvider) {
+    ngClipProvider.setPath('../admin/assets/lib/zeroclipboard/dist/ZeroClipboard.swf');
+  }
+]);

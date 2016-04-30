@@ -11,26 +11,36 @@ Admin module for MEAN applications to manage:
 
 ## Basic Usage
 
-  Install Package in root of your mean app:
+Install Package in root of your mean app:
 
-    $ mean install mean-admin
+```
+$ mean install mean-admin
+```
 
-  Add the admin role to your user:
+Add the admin role to your user:
 
-    $ mean user <email> -a admin
+```
+$ mean user <email> -a admin
+```
 
-  (Re)start the server:
+(Re)start the server:
 
-    $ grunt
+```
+$ grunt
+```
 
 ## Deployment
 
 In order to deploy `mean-admin` to Heroku or otherwise, add the following line to `package.json` of the mean app:
 
-    "mean-admin": "linnovate/mean-admin",
+```
+"mean-admin": "linnovate/mean-admin",
+```
 
 _Note: the `mean-admin` pubilshed on npm does not work with meanio. The line above will pull the module directly from GitHub._
 
 Don't forget to add the `admin` role to the admin user. Make sure `server/config/env/production.js` is updated with the production db url, then use the `--env` flag as:
 
-    $ mean user <email> -a admin --env production
+```
+$ mean user <email> -a admin --env production
+```
